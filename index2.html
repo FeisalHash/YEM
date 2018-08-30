@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/icon.ico">
+    <title>Youth Empowerment!</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+    <style media="screen">
+    #second-part {
+        background: url(img/backgroundtext.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="header">
+            <h1 class="header-heading">Youth EMpowerment</h1>
+    </div>
+
+    <!-- nav bar -->
+    <div class="nav-bar">
+        <ul class="nav">
+          <li><a href="index2.html">Home</a></li>
+          <li><a href="index3.html">Events</a></li>
+          <li><a href="index4.html">About us</a></li>
+          <li><a href="index5.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- slides -->
+    <div class="content">
+       <div id="up" class="main">
+          <h2>Home</h2>
+           <hr>
+           <div class="w3-content w3-section" style="max-width:1000px">
+              <img class="mySlides" src="img/img6.jpg" height="480px" width="1270px">
+              <img class="mySlides" src="img/img7.jpg" height="480px" width="1270px">
+              <img class="mySlides" src="img/img1.jpg" height="480px" width="1270px">
+              <img class="mySlides" src="img/img2.jpg" height="480px" width="1270px">
+              <img class="mySlides" src="img/img3.jpg" height="480px" width="1270px">
+           </div>
+       </div>
+
+     <!-- scripts for slideshow -->
+      <script>
+          var myIndex = 0;
+          carousel();
+
+          function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {
+      myIndex = 1
+              }
+              x[myIndex - 1].style.display = "block";
+              setTimeout(carousel, 2500);
+          }
+        </script>
+
+      <!-- our team -->
+      <br>
+      <div id="second-part">
+      <div class="info">
+
+          <h2>Our Team</h2>
+          <table id="information" style="width:100%">
+              <tr>
+      <th>George Ndichu</th>
+      <th>John Gatheru</th>
+      <th>Leon Karumba</th>
+      <th>Feisal Hasham</th>
+              </tr>
+              <tr>
+      <td>Founder/chairman <br>Favorite quote "Life is never boring if you learn to party hard."</td>
+      <td>Our C.E.O. <br> In his own words "young, talented and handsome"</td>
+      <td>Our C.F.O <br>Best Quote Description: "Some people say funny things,but you know what I do?I say things funny!"</td>
+      <td>Photographer<br>There are NO bad pictures,its just the way your face looks sometimes</td>
+              </tr>
+          </table>
+      </div>
+      <br><br>
+
+      <!-- Why Choose Us -->
+      <div id="why-choose-us">
+            <h2>Why Choose Us</h2>
+              <h4>Benefit</h4>
+              <p>We bring<strong> love,life and adventure</strong>.Life is short,break the rules.Forgive quickly,kiss slowly.Love truly.Laugh uncontrollably and never regret anything that makes you smile.Be happy for this moment.This moment is your life.</p>
+              <img src="img/img5.jpg" alt="A captivating photo"> <img src="img/img4.jpg" alt="A captivating photo of friendship">
+      </div>
+    </div>
+
+      <!-- footer -->
+      <footer class="footer-distributed">
+        <div class="footer-left">
+
+        <!-- footer first column -->
+        <h3><span>YEM</span></h3>
+          <p class="footer-links">
+            <a href="index2.html">Home</a>
+            ·
+            <a href="index4.html">About</a>
+            ·
+            <a href="index5.html">Contact</a>
+          </p>
+          <p class="footer-company-name">YEM &copy; 2018</p>
+        </div>
+
+        <!-- footer second column -->
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Ngong Road</span> Nairobi, Kenya</p>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+254735373445</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:Youth.EMpowerment@ymail.com">Youth.EMpowerment@ymail.com</a></p>
+          </div>
+        </div>
+
+        <!-- footer third column -->
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About the company</span>
+            We are a social group that aims to make life fun for every youth.
+          </p>
+          <div class="footer-icons">
+            <a href="https://www.facebook.com/YEM"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.twitter.com/YEM"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedIn.com/YEM"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.github.io/YEM"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      </footer>
+</body>
+</html>

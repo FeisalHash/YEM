@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/icon.ico">
+    <title>ABOUT US!</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXUnhPjHIC4TfewD6426KBFfMTj3w2ScQ"></script>
+    <script type="text/javascript">
+    var myCenter = new google.maps.LatLng(-1.300102, 36.784782);
+    function initialize(){
+        var mapProp = {
+            center:myCenter,
+            zoom:12,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map"),mapProp);
+        var marker = new google.maps.Marker({
+            position:myCenter,
+        });
+        marker.setMap(map);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <style media="screen">
+    body {
+        background: url(img/backgroundtext.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+            <h1 class="header-heading">Youth EMpowerment</h1>
+    </div>
+
+    <!-- nav bar -->
+<div class="nav-bar">
+    <ul class="nav">
+      <li><a href="index2.html">Home</a></li>
+      <li><a href="index3.html">Events</a></li>
+      <li><a href="index4.html">About us</a></li>
+      <li><a href="index5.html">Contact Us</a></li>
+    </ul>
+</div>
+    <h2>ABOUT US</h2>
+    <div class="firsttext">
+    YEM started when we found out that we as friends do not explore the fun aspect of life which comes in handy in our lives.
+    </div>
+
+    <h2>HOW WE DO IT!</h2>
+    <div class="secondtext">
+   We basically explore the group to find out people's ideas and based on that we come up with fun stuff to do such as GP carting and others listed above
+    </div>
+    <!-- <img src="img/juju.jpg" alt="A picture of yem">
+    <img src="img/fun.jpg" height="190px" alt="A picture of fun">
+    <img src="img/fun2.jpg" alt="A picture of why have fun"> -->
+    <div id="map"></div>
+    <!-- footer -->
+  <footer class="footer-distributed">
+    <div class="footer-left">
+
+    <!-- footer first column -->
+    <h3><span>YEM</span></h3>
+      <p class="footer-links">
+        <a href="index2.html">Home</a>
+        ·
+        <a href="index4.html">About</a>
+        ·
+        <a href="index5.html">Contact</a>
+      </p>
+      <p class="footer-company-name">YEM &copy; 2018</p>
+    </div>
+
+    <!-- footer second column -->
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Ngong Road</span> Nairobi, Kenya</p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+254735373445</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:Youth.EMpowerment@ymail.com">Youth.EMpowerment@ymail.com</a></p>
+      </div>
+    </div>
+
+    <!-- footer third column -->
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About the company</span>
+        We are a social group that aims to make life fun for every youth.
+      </p>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/YEM"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.twitter.com/YEM"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedIn.com/YEM"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.github.io/YEM"><i class="fa fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+
+  </footer>
+  </body>
+</html>

@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Youth Empowerment!</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
-    <script src="js/scripts.js" charset="utf-8"></script>
-  </head>
-  <body>
-    <div class="container">
-
-    <h1>Youth EMpowerment</h1>
-
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="img/icon.ico">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="js/jquery-3.3.1.js" charset="utf-8"></script>
+		<script src="js/scripts.js" charset="utf-8"></script>
+		<title>Log IN</title>
+	</head>
+	<body>
+		<!-- header -->
+    <div class="header">
+            <h1 class="header-heading">&nbsp;&nbsp;&nbsp;&nbsp;Youth EMpowerment</h1>
     </div>
-  </body>
+
+		<h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Login Form</h2>
+
+		<form action="index2.html">
+
+		  <div class="container">
+		    <label for="uname"><b>Username</b></label>
+		    <input type="text" placeholder="Enter Username" name="uname" required>
+
+		    <label for="psw"><b>Password</b></label>
+		    <input type="password" placeholder="Enter Password" name="psw" required>
+
+		    <button onclick="index2.html" type="submit">Login</button>
+		    <label>
+		      <input type="checkbox" checked="checked" name="remember"> Remember me
+		    </label>
+		  </div>
+
+		  <div class="container" style="background-color:#f1f1f1">
+		    <button type="button" class="cancelbtn">Cancel</button>
+		    <span class="psw">Dont have an account?  <a href="index1.html">Sign up?</a></span>
+		  </div>
+		</form>
+
+	</body>
 </html>
